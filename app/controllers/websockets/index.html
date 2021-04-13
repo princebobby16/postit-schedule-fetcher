@@ -9,6 +9,7 @@
 <h2>Schedule Status</h2>
 <h1 id="stat"></h1>
 <h2 id="count"></h2>
+<a href="image" id="image"></a>
 <script>
     let status = {};
     let userdata = {};
@@ -19,7 +20,7 @@
         console.log("Successfully connected to endpoint");
         userdata = {
             "tenant_namespace": "postit",
-            "auth_token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4NjIyOWU3ZS0wZjc4LTQ4NjAtYTRmMy1hZjdhN2M5NWRlZjMiLCJhdWQiOlsicG9zdGl0LWF1ZGllbmNlIiwicG9zdGl0Il0sImlzcyI6IlBPU1RJVCIsInN1YiI6IlVzZXIgTG9naW4gQXV0aGVudGljYXRpb24iLCJleHAiOjE2MTY3NzcyNzgsImlhdCI6MTYxNjc3NjA3OH0.Sp-nZsvTWs5MimZup5LzW5OGzSibRC7kdm5m-z-mch7quWV6-T2c7OyTa_SQiukpd_kNf9WP2oEeYUoEFQaWyg"
+            "token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4NjIyOWU3ZS0wZjc4LTQ4NjAtYTRmMy1hZjdhN2M5NWRlZjMiLCJhdWQiOlsicG9zdGl0LWF1ZGllbmNlIiwicG9zdGl0Il0sImlzcyI6IlBPU1RJVCIsInN1YiI6IlVzZXIgTG9naW4gQXV0aGVudGljYXRpb24iLCJleHAiOjE2MTY3NzcyNzgsImlhdCI6MTYxNjc3NjA3OH0.Sp-nZsvTWs5MimZup5LzW5OGzSibRC7kdm5m-z-mch7quWV6-T2c7OyTa_SQiukpd_kNf9WP2oEeYUoEFQaWyg"
         };
         data = JSON.stringify(userdata);
         console.log(data);
@@ -40,6 +41,7 @@
             document.getElementById("count").innerText = "";
         } else {
             document.getElementById("stat").innerText = status[0].schedule_title;
+            document.getElementById("image").innerHTML.link(status[0].posts[0].post_images);
             document.getElementById("count").innerText = (status[0].post_count / status[0].post_ids.length) * 100;
         }
     }

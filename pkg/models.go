@@ -7,7 +7,7 @@ import (
 type (
 	WebSocketHandShakeData struct {
 		TenantNamespace string `json:"tenant_namespace"`
-		AuthToken       string `json:"auth_token"`
+		Token           string `json:"token"`
 	}
 
 	ScheduleStatus struct {
@@ -55,18 +55,6 @@ type (
 		CreatedOn      time.Time `json:"created_on"`
 		UpdatedOn      time.Time `json:"updated_on"`
 	}
-
-	//Post struct {
-	//	PostId       string    `json:"post_id"`
-	//	PostMessage  string    `json:"post_message"`
-	//	PostImages   [][]byte  `json:"post_images"`
-	//	ImagePaths   []string  `json:"image_paths"`
-	//	HashTags     []string  `json:"hash_tags"`
-	//	PostPriority bool      `json:"post_priority"`
-	//	CreatedOn    time.Time `json:"created_on"`
-	//	UpdatedOn    time.Time `json:"updated_on"`
-	//}
-
 	StandardResponse struct {
 		Data Data `json:"data"`
 		Meta Meta `json:"meta"`
