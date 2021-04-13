@@ -36,18 +36,21 @@ func Writer(conn *websocket.Conn, tenantNamespace string, connection *sql.DB) {
 			logs.Logger.Info("Updating status: ", t)
 			statuses, err := FetchStatuses(connection, tenantNamespace)
 			if err != nil {
+				_ = conn.Close()
 				_ = logs.Logger.Error(err)
 				return
 			}
 
 			jsonBytes, err := json.Marshal(statuses)
 			if err != nil {
+				_ = conn.Close()
 				_ = logs.Logger.Error(err)
 				return
 			}
 
 			err = conn.WriteMessage(websocket.TextMessage, jsonBytes)
 			if err != nil {
+				_ = conn.Close()
 				_ = logs.Logger.Error(err)
 				return
 			}

@@ -1,1 +1,2 @@
-1618325136300077600 [Error] wsasend tcp [::1]:5379->[::1]:55700: wsasend: An established connection was aborted by the software in your host machine.
+1618326093872493000 [Error] wsasend tcp 127.0.0.1:5379->127.0.0.1:56463: wsasend: An established connection was aborted by the software in your host machine.
+1618326126189997900 [Error] wsasend tcp [::1]:5379->[::1]:56477: wsasend: An established connection was aborted by the software in your host machine.
