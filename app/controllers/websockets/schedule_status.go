@@ -171,7 +171,7 @@ func ScheduleStatus(w http.ResponseWriter, r *http.Request) {
 	logs.Logger.Info(webSocketHandshake)
 
 	// validate token
-	err = pkg.WebSocketTokenValidateToken(webSocketHandshake.AuthToken, webSocketHandshake.TenantNamespace)
+	err = pkg.WebSocketTokenValidateToken(webSocketHandshake.Token, webSocketHandshake.TenantNamespace)
 	if err != nil {
 		_ = logs.Logger.Error(err)
 		err = ws.Close()
