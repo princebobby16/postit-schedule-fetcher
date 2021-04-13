@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6277cd1c-d8c5-4921-8826-4c67bbc2b3db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/health_check.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/websockets/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/websockets/schedule_status.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/middlewares/json_middleware.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/router/router.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/connection.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/helper_utils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/logs/common.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/logs/critical.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/logs/error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/logs/logs.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/models.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/private.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schedule-status.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +61,15 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
@@ -92,6 +82,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="772" y="196" key="#Notifications/0.0.1366.738@0.0.1366.738" timestamp="1618297710305" />
+    <state x="292" y="0" key="CommitChangelistDialog2" timestamp="1618323291347">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="292" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1618323291347" />
     <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1618323023332">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -108,5 +102,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1618323023332" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1618323301300">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1618323301300" />
   </component>
 </project>
